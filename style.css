@@ -1,0 +1,31 @@
+            body {
+            background: #88dfda;
+        }
+        
+        svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        
+        .heart {
+            transition: 3s;
+        }
+        
+        .heart:hover {
+            stroke: yellow;
+            stroke-width: 3;
+            stroke-dasharray: 100%;
+            stroke-dashoffset: 100%;
+            transform: scale(1.3);
+            transform-origin: center;
+            animation: dash 3s linear infinite;
+        }
+        
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
